@@ -1,0 +1,13 @@
+[package]
+name = "waverast"
+version = "0.1.0"
+edition = "2024"
+license = "ISC"
+
+[features]
+gpu = ["dep:wgpu", "dep:bytemuck"]
+
+[dependencies]
+kurbo.workspace = true
+wgpu = { version = "29", optional = true }
+bytemuck = { version = "1", features = ["derive"], optional = true }

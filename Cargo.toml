@@ -1,0 +1,11 @@
+[workspace]
+members = ["waverast", "waverast-demo"]
+resolver = "3"
+
+[workspace.dependencies]
+waverast = { path = "waverast", features = ["gpu"] }
+kurbo = "0.13"
+wgpu = "29"
+winit = "0.30.13"
+pollster = "0.4"
+bytemuck = { version = "1", features = ["derive"] }

@@ -1,0 +1,25 @@
+[package]
+name = "waverast-demo"
+version = "0.1.0"
+edition = "2024"
+license = "ISC"
+
+[dependencies]
+waverast.workspace = true
+png = "0.17"
+wgpu.workspace = true
+winit.workspace = true
+pollster.workspace = true
+bytemuck.workspace = true
+
+[[bin]]
+name = "waverast-demo"
+path = "src/main.rs"
+
+[[bin]]
+name = "render-svg"
+path = "src/render_svg.rs"
+
+[[bin]]
+name = "viewer"
+path = "src/viewer.rs"
